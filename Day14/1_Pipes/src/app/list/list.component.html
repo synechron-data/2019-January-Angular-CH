@@ -1,0 +1,21 @@
+<h3>List Component</h3>
+
+<!-- <ng-container *ngIf=personList>
+    <div *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </div>
+</ng-container> -->
+
+<h3>Search Names, which starts with </h3>
+<input type="text" [(ngModel)]="name">
+
+<ng-container *ngIf=personList>
+    <!-- <div *ngFor="let person of personList | slice:1:3"> -->
+    <div *ngFor="let person of personList | filter:name">
+        <h4>
+            <a href="http://www.google.com" (click)="select($event,person)">{{person}}</a>
+        </h4>
+    </div>
+</ng-container>
+
+<h3>Selected: {{selected}}</h3>

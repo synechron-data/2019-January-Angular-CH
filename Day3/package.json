@@ -1,0 +1,21 @@
+{
+  "name": "ts_demos",
+  "version": "1.0.0",
+  "description": "TypeScript Demos",
+  "private": true,
+  "scripts": {
+    "start": "tsc -w",
+    "version": "tsc -v"
+  },
+  "author": "Manish",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "typescript": "2.7.2"
+  },
+  "dependencies": {
+    "core-js": "2.6.1",
+    "jquery": "^3.3.1",
+    "systemjs": "0.21.5"
+  }
+}

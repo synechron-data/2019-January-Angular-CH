@@ -1,0 +1,16 @@
+npm install -g express-generator
+
+1. express --view=pug myapp
+2. cd myapp
+3. npm install
+4. npm install --save-dev nodemon
+5. change package.json 'start' script to use nodemon
+6. npm start
+
+npm install -g sails
+
+1. sails new test-project
+2. pick 1 to create a web app
+   pick 2 to create an empty project
+3. cd test-project
+4. sails lift

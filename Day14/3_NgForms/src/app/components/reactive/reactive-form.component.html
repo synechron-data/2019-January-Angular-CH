@@ -1,0 +1,53 @@
+<div>
+    <h3 class="row">Reactive Forms</h3>
+    <form class="form-horizontal" [formGroup]="regForm" (submit)=logForm()>
+        <div class="form-group">
+            <label for="firstname" class="control-label col-sm-2">Firstname: </label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" formControlName="firstname">
+            </div>
+            <div class="col-sm-4" class="text-danger" *ngIf="regForm.get('firstname').hasError('required') && regForm.get('firstname').touched">
+                <p>Firstname is required...</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastname" class="control-label col-sm-2">Lastname: </label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" formControlName="lastname">
+            </div>
+            <div class="col-sm-4" class="text-danger" *ngIf="regForm.get('lastname').touched">
+                <p *ngIf="regForm.get('lastname').hasError('required')">Lastname is required...</p>
+                <p *ngIf="regForm.get('lastname').hasError('maxlength')">MaxLength...</p>
+                <p *ngIf="regForm.get('lastname').hasError('minlength')">MinLength...</p>
+            </div>
+        </div>
+        <div formGroupName="address">
+            <div class="form-group">
+                <label for="city" class="control-label col-sm-2">City: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" formControlName="city">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="zip" class="control-label col-sm-2">Zip: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" formControlName="zip">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+                <button type="submit" [disabled]=regForm.invalid class="btn btn-primary btn-block">Save</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="reset" class="btn btn-default btn-block">Reset</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-success btn-block" (click)=load()>Load</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-success btn-block" (click)=patch()>Patch</button>
+            </div>
+        </div>
+    </form>
+</div>

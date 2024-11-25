@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Hello = (function Hello() {
+            function M1() {
+                console.log("Hello World");
+            }
+
+            function M2(name) {
+                console.log("Hello " + name);
+            }
+
+            return function () {
+                if (arguments.length == 0)
+                    M1();
+                else if (arguments.length == 1)
+                    M2(arguments[0]);
+                else
+                    throw Error("Invalid Arguments");
+            }
+        })();
+
+        Hello();
+        Hello("Manish");
+    </script>
+</body>
+
+</html>

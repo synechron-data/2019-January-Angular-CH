@@ -1,0 +1,15 @@
+<h3>List Component</h3>
+
+<!-- <ng-container *ngIf=personList>
+    <div *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </div>
+</ng-container> -->
+
+<ng-container *ngIf=personList>
+    <div *ngFor="let person of personList">
+        <a href="http://www.google.com" (click)="select($event,person)">{{person}}</a>
+    </div>
+</ng-container>
+
+<h3>Selected: {{selected}}</h3>

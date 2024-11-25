@@ -1,0 +1,19 @@
+{
+  "name": "express_app_with_views",
+  "version": "1.0.0",
+  "description": "Express Application with Server Views",
+  "private": true,
+  "scripts": {
+    "start": "nodemon bin/www"
+  },
+  "author": "Manish",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "morgan": "1.9.1",
+    "pug": "2.0.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "first_demo",
+  "version": "1.0.0",
+  "description": "Using Npm Packages",
+  "private": true,
+  "author": "Manish",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}

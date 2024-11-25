@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person(age) {
+            this.age = age;
+            var self = this;
+            this.growOld = function () {
+                console.log(this);
+                self.age += 1;
+            }
+        }
+
+        var p = new Person(20);
+        // p.growOld();
+        // p.growOld();
+        // p.growOld();
+        // setInterval(p.growOld.bind(p), 1000);
+        setInterval(p.growOld, 1000);
+
+        setInterval(function () {
+            console.log(p.age);
+        }, 1000);
+    </script>
+</body>
+
+</html>

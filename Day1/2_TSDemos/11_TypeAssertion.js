@@ -1,0 +1,15 @@
+// var data = "23.5asdasd";
+// var r1 = parseInt(data) + 10;
+// console.log(r1);
+// var r2 = parseFloat(data) + 10;
+// console.log(r2);
+// var r3 = Number(data) + 10;
+// console.log(r3);
+var myData = "This is just for fun..";
+var l1 = myData.length;
+var l2 = myData.length;
+var l3 = myData.length;
+console.log(l1);
+console.log(l2);
+console.log(l3);
+var l4 = myData.toFixed();

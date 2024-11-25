@@ -1,0 +1,15 @@
+RDBMS				NO SQL
+
+Database			Database
+
+Tables				Collections
+
+Rows				Records
+
+Columns				Fields
+
+Join				Embedded Documents
+
+SQL Service			Mongod
+
+SSMS				Mongo Prompt / Compass / Robo Mongo

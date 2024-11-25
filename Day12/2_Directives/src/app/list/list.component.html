@@ -1,0 +1,27 @@
+<h3>List Component</h3>
+
+<ng-container *ngIf=personList>
+    <div *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </div>
+</ng-container>
+
+<!-- <div *ngIf=personList>
+    <div *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </div>
+</div> -->
+
+<!-- <ul class="list-group">
+    <li class="list-group-item" *ngFor="let person of personList">
+        <a href="#">{{person}}</a>
+    </li>
+</ul> -->
+
+<!-- <ul class="list-group">
+    <ng-template ngFor let-person [ngForOf]="personList">
+        <li class="list-group-item">
+            <a href="#">{{person}}</a>
+        </li>
+    </ng-template>
+</ul> -->

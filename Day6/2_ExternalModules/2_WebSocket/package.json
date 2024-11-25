@@ -1,0 +1,17 @@
+{
+  "name": "websocket_demo",
+  "version": "1.0.0",
+  "description": "Websocket Demo",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Manish",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  },
+  "dependencies": {
+    "websocket": "1.0.28"
+  }
+}

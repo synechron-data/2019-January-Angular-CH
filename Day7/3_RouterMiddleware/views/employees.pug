@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    h1.text-info=ptitle
+    a(href="/") Back to Index
+    hr.row
+    table.table
+        thead
+            tr
+                th Id
+                th Name
+                th
+                th
+        tbody
+            each emp in empList
+                tr
+                    td= emp.id
+                    td= emp.name
+                    td
+                        a.text-info(href="#") Edit
+                    td
+                        a.text-danger(href="#") Delete
+    //- ul.list-group
+    //-     each emp in empList
+    //-         li.list-group-item
+    //-             h3= emp.id
+    //-             h4= emp.name
+
+    //- script.
+    //-     alert("Executing")
